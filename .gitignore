@@ -24,6 +24,7 @@
 npm-debug.log
 Thumbs.db
 .idea
+.vscode
 .cache
 *.sublime-grunt.cache
 *.sublime-project
