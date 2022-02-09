@@ -16,6 +16,7 @@
 *.vi
 *~
 
+
 # OS or Editor folders
 .DS_Store
 .project
@@ -29,12 +30,16 @@ Thumbs.db
 *.sublime-grunt.cache
 *.sublime-project
 *.sublime-workspace
+yarn-error.log
+.env
 ._*
 
 
 # Folders to ignore
-bower_components/
-dist/
-build/
-node_modules/
+bower_components
+dist
+build
+public
+node_modules
+
 
