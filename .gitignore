@@ -39,7 +39,6 @@ yarn-error.log
 bower_components
 dist
 build
-public
 node_modules
 
 

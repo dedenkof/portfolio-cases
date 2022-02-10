@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+    <link rel="icon" type="image/icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="word-container" id="word-container">
+
+        <div id="image">
+            <img src="" />
+        </div>
+        <!-- En word -->
+        <div class="en-text">
+            <span id="word"></span>
+        </div>
+        <!-- Translate -->
+        <div class="ru-text">
+            <span id="word-translate"></span>
+        </div>
+
+        <div class="note-text">
+            <span id="note"></span>
+        </div>
+
+        <div class="partspeech-text">
+            Часть речи: <span id="partspeech"></span>
+        </div>
+
+        <div class="typeword-text">
+            Тип: <span id="typeword"></span>
+        </div>
+
+        <hr>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="prev-button" id="prev-word">&laquo; Предыдущее</button>
+            <button id="new-word">&raquo; Новое слово</button>
+        </div>
+    </div>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

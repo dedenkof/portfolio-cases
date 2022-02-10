@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: #111;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-container {
+  width: 600px;
+  max-width: 900px;
+  padding: 30px 40px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(10px);
+}
+
+#image img {
+  display: inline-block;
+  width: 144px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.en-text {
+  font-size: 2.1rem;
+}
+
+.ru-text {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+.note-text {
+  text-align: left;
+  color: #1f1b1b;
+}
+
+#partspeech {
+  color: #948dff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.typeword-text {
+  color: #ff3939;
+  font-size: .8rem;
+}
+
+
+.partspeech-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#typeword-text {}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+.prev-button:hover {
+  color: #38a1f3;
+}
+
+hr {
+  margin-top: 20px;
+  height: 1px;
+  border: none;
+  color: #dbdbdb;
+  background-color: #dbdbdb;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .word-container {
+    margin: auto 10px;
+  }
+
+  .en-text {
+    font-size: 2.5rem;
+  }
+}

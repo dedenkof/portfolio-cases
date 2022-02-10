@@ -1,6 +1,8 @@
 const express = require('express');
 const dotenv = require('dotenv').config();
-const { Client } = require('@notionhq/client');
+const {
+  Client
+} = require('@notionhq/client');
 
 // Init client
 const notion = new Client({
@@ -26,30 +28,38 @@ const getWords = async () => {
     path: `databases/${database_id}/query`,
     method: 'POST',
   }
-  
-  const { results } = await notion.request(wordLoad);
+
+  const {
+    results
+  } = await notion.request(wordLoad);
 
   //console.log(results);
 
   const words = results.map(page => {
     //console.log(page);
-    
+
     return {
       enWords: page.properties.English_word_phrase.title[0],
       ruWords: page.properties.Russian_word_phrase.rich_text[0],
       note: page.properties.Sentence_Note.rich_text[0],
       partSpeech: page.properties.Parts_Speech.multi_select[0],
-      typeWords: page.properties.Word_Phrase.select[0],
-  }
-  
-})
-return words;
+      typeWords: page.properties.Word_Phrase.select.name,
+      pic: page.properties.image.files[0],
+    }
+
+  })
+  return words;
 }
 
-;(async () => {
-const allWords = await getWords();
-console.log(allWords);
+;
+(async () => {
+
+  const allWords = await getWords();
+
+  console.log(allWords); // output words
+
 })();
+
 //getWords();
 
 
