@@ -13,3 +13,7 @@ Pulling quotes from forismatic.com via API (Open with Live Serever VS Code)
 
 Vanilla JS implementation of a card slider with an active card on a large part of the screen and displaying the remaining slides on a smaller part of the screen. By clicking on the slide, a smooth transition to another card. (Open with Live Serever VS Code)
 
+- slider-vertical
+
+Vertical slider with change of description and image with cross-motion effect.
+
