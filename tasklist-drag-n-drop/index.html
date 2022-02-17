@@ -4,28 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Drag & Drop | Проект 2</title>
+    <title>Drag & Drop Task Board</title>
   </head>
   <body>
-    <div>
-      <div class="row">
-          <div class="col-header start">Начать</div>
-          <div class="col-header progress">В процессе</div>
-          <div class="col-header done">Готовы</div>
+    <h2 class="title">Task Desk</h2>
+    <div class="container">
+      <div class="section">
+
+          <h3 class="header header__start">Start</h3>
+          <div class="task-container">
+          <ul class="placeholder">
+            <li class="task" draggable="true">Карточка 1</li>
+            <li class="task" draggable="true">Карточка 2</li>
+            <li class="task" draggable="true">Карточка 3</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="row">
-        <ul class="placeholder">
-          <li class="task">Задача 1</li>
-          <li class="task">Задача 2</li>
-          <li class="task">Задача 3</li>
-        </ul>
+      <div class="section">
+        <h3 class="header header__progress">Progress</h3>
+      <div class="task-container">
         <ul class="placeholder">
           
         </ul>
+      </div>
+        
+      </div>
+
+      <div class="section">
+        <h3 class="header header__done">Done</h3>
+      <div class="task-container">
         <ul class="placeholder">
-         
+          
         </ul>
+      </div>
       </div>
       
     </div>

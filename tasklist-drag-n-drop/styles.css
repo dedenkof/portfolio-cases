@@ -6,27 +6,42 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e5e5e5;
-  display: flex;
-  padding-top: 5rem;
-  justify-content: center;
+  background-color: #6495ed;
   overflow: hidden;
   margin: 0;
 }
 
-.row {
-  display: flex;
-  width: 600px;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+
+.title {
+  text-align: center;
+  color: white;
+  margin-top: 150px;
 }
 
-.col-header {
-  width: 150px;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-  border-radius: 20px;
-  padding: 0.8rem 1rem;
+.container{
+  padding-top: 2rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.section {
+  margin: .5rem;
+  background-color: #f0f0f0;
+  width:240px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 4px 4px 9px rgba(6, 55, 110, 0.26);
+  min-height: 250px;
+}
+
+.header {
+  width: 100%;
+  padding: 0.8rem 0;
   color: #fff;
+  margin: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 ul {
@@ -34,46 +49,49 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style-type: none;
+.task-container {
+  padding: .5rem;
+  height: 82%;
 }
 
+
 .task {
-  width: 150px;
-  height: 66px;
+  display: block;
   margin-top: 10px;
-  border: 1px solid #eee;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-  border-radius: 20px;
-  background: #f7f6f7;
-  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1rem .6rem;
   color: #828282;
-  text-align: center;
   cursor: grab;
 }
+
 
 .task:active {
   cursor: grabbing;
 }
 
 .placeholder {
-  width: 150px;
-  height: auto;
+  list-style-type: none;
+  text-align: left;
+  padding: 0.1rem 0.1rem;
+  text-align: left;
+  height: 100%;
 }
 
-.start {
+.header__start {
   background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
 }
 
-.progress {
+.header__progress {
   background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
 }
 
-.done {
+.header__done {
   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
 }
 
-.hold {
+.selected {
   background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
   border: 2px solid #fff;
   color: #fff;
@@ -83,8 +101,11 @@ li {
   display: none;
 }
 
-.selected {
-  border: 2px dashed #8ed7ed;
-  border-radius: 20px;
-  /* padding: 20px; */
+.show {
+  display: block;
+}
+
+.hover {
+  border: 2px dashed #a0b9fd;
+  border-radius: 5px;
 }
