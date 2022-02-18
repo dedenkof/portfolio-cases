@@ -2,46 +2,60 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #6495ed;
   overflow: hidden;
-  margin: 0;
 }
 
 
-.title {
-  text-align: center;
-  color: white;
-  margin-top: 150px;
-}
-
-.container{
-  padding-top: 2rem;
+.container {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 2rem;
+
 }
 
-.section {
-  margin: .5rem;
-  background-color: #f0f0f0;
-  width:240px;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 4px 4px 9px rgba(6, 55, 110, 0.26);
-  min-height: 250px;
-}
 
-.header {
+.boards {
+  display: flex;
   width: 100%;
-  padding: 0.8rem 0;
+  /* margin: .5rem; */
+  text-align: center;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  margin: 0 .3rem;
+  padding: .5rem;
+  max-width: 250px;
+  width: 100%;
+  background-color: #f0f0f0;
+  box-shadow: 4px 4px 9px rgba(6, 55, 110, 0.26);
+  border-radius: 5px;
+  transition: .3s all ease;
+}
+
+
+.title-board {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+  width: 100%;
+  padding: 0.6rem;
+  text-align: left;
   color: #fff;
   margin: 0;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+}
+
+.title-board:focus {
+  outline: 2px solid #a763ff;
 }
 
 ul {
@@ -49,53 +63,139 @@ ul {
   padding: 0;
 }
 
-.task-container {
-  padding: .5rem;
-  height: 82%;
-}
-
-
-.task {
-  display: block;
-  margin-top: 10px;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
-  border-radius: 5px;
-  background: #fff;
-  padding: 1rem .6rem;
-  color: #828282;
-  cursor: grab;
-}
-
-
-.task:active {
-  cursor: grabbing;
-}
-
 .placeholder {
   list-style-type: none;
   text-align: left;
   padding: 0.1rem 0.1rem;
   text-align: left;
-  height: 100%;
+  min-height: 60px;
 }
 
-.header__start {
-  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+.task {
+  background: #fff;
+  margin-top: 10px;
+  font: bold 14px 'Roboto', sans-serif;
+  border-radius: 5px;
+  padding: .6rem;
+  color: #3a3a3a;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  outline: none;
+  cursor: grab;
 }
 
-.header__progress {
-  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+.card-form {
+  border-radius: 5px;
+  margin-top: auto;
+  display: none;
 }
 
-.header__done {
-  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+.card-form__name {
+  resize: none;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background: #fff;
+  padding: .5rem;
+  width: 100%;
 }
 
-.selected {
-  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
-  border: 2px solid #fff;
+.card-name:focus {
+  outline: none;
+}
+
+.card-form__buttons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.card-form__button--add {
+  background: #00db6e;
+  border: none;
+  border-radius: 5px;
+  height: 36px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.3rem;
+  width: 100%;
+}
+
+.card-form__button--cancel {
+  background: #fff;
+  border: 1px solid #858585;
+  border-radius: 5px;
+  height: 36px;
+  cursor: pointer;
+  color: 858585;
+  display: flex;
+  justify-content: сenter;
+  align-items: center;
+  width: 75px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.card-form__button--show {
+  height: 30px;
+  background: rgba(155, 155, 155,.3);
+  border-radius: 5px;
+  margin-top: 0.7rem;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.show-form span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.add-board,
+.remove-board
+{
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0.7rem;
+    width: 250px;
+    border-radius: 5px;
+    margin: 0 0 30px 10px;
+    cursor: pointer;
+}
+
+.remove-board {
+  background: none;
+  border: 1px solid #fff;
   color: #fff;
 }
+
+
+.card-form__button--remove {
+  background: #fff;
+    display: flex;
+    justify-content: сenter;
+    align-items: сenter;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-form__button--remove span {
+  margin-right: 10px;
+}
+
+
 
 .hide {
   display: none;

@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Drag & Drop Task Board</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Drag & Drop Task Board</title>
+</head>
+
+<body>
+
+  <div class="container">
+
     <h2 class="title">Task Desk</h2>
-    <div class="container">
-      <div class="section">
 
-          <h3 class="header header__start">Start</h3>
-          <div class="task-container">
-          <ul class="placeholder">
-            <li class="task" draggable="true">Карточка 1</li>
-            <li class="task" draggable="true">Карточка 2</li>
-            <li class="task" draggable="true">Карточка 3</li>
-          </ul>
+    <div class="add-board">Добавить доску</div>
+
+
+    <div class="boards">
+
+      <div class="task-container task-container__pearent">
+        <span contenteditable="true" class="title-board">Введите название доски</span>
+
+        <ul class="placeholder">
+          <li class="task" draggable="true">Карточка 1</li>
+        </ul>
+
+        <div class="card-form">
+
+          <textarea class="card-form__name" placeholder='Введите название для карточки'></textarea>
+
+          <div class="card-form__buttons">
+
+            <button class="card-form__button--add">Добавить карточку</button>
+
+            <button class="card-form__button--cancel">Отменить</button>
+
+          </div>
+
         </div>
-      </div>
 
-      <div class="section">
-        <h3 class="header header__progress">Progress</h3>
-      <div class="task-container">
-        <ul class="placeholder">
-          
-        </ul>
-      </div>
-        
-      </div>
+        <div class="card-form__button--show"><span> + </span> Добавить карточку</div>
 
-      <div class="section">
-        <h3 class="header header__done">Done</h3>
-      <div class="task-container">
-        <ul class="placeholder">
-          
-        </ul>
       </div>
-      </div>
-      
     </div>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
