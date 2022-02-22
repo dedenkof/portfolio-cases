@@ -35,13 +35,26 @@ function addTask() {
   })
 
   addTaskBtn.addEventListener('click', () => {
+
     const taskList = document.querySelectorAll('.placeholder');
 
     const addNewTask = document.createElement('li');
     addNewTask.classList.add('task');
     addNewTask.draggable = true;
     addNewTask.textContent = nameTaskValue;
+    
     taskList[0].append(addNewTask);
+
+    // To Do Loocal Storage
+
+    // deploy to LS
+    //localStorage.setItem(nameTaskValue, addNewTask.outerHTML);
+
+
+    // getTaskFrom LS
+   //localStorage.getItem('taskToLS');
+
+
 
     addNameToTaskBtn.value = '';
     nameTaskValue = '';
@@ -55,6 +68,8 @@ function addTask() {
 }
 
 addTask();
+
+
 
 
 function addBoard() {
