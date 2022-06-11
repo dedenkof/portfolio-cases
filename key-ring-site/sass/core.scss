@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	color: $black;
+	height: 100%;
+	height: 100vh;
+}
+
+body {
+	font-family: 'roboto_regular_400', 'Arial', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	height: 100%;
+	height: 100vh;
+}
+
+.container {
+	@include min-max(320px, 1200px, 0);
+	display: flex;
+	flex-wrap: wrap;
+	//justify-content: space-between;
+	//align-items: baseline;
+}

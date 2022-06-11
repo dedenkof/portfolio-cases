@@ -1,0 +1,854 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/kalosha_vse.png") no-repeat center top/cover #001b30;
+  overflow-x: hidden;
+}
+
+
+.left__content {
+  padding: 20px;
+  box-sizing: border-box;
+  flex-basis: calc(100% - 415px);
+  flex-grow: 1;
+}
+
+.right__content {
+  padding: 20px;
+  box-sizing: border-box;
+  flex-basis: 410px;
+}
+
+footer {
+  padding-bottom: 26px;
+  text-align: center;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: $black;
+  font: 16px 'roboto_regular_400', 'Arial', sans-serif;
+}
+
+h1 {
+  font: 64px 'roboto_black_900', 'Arial', sans-serif;
+  margin-top: 88px;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #fff,
+  -1px -1px 0 hsl(0, 0%, 100%),
+  1px 1px 1px hsl(0, 0%, 100%),
+  -1px -1px 15px  rgba(0,34,86,.37);
+  margin-bottom: 0;
+}
+
+h1 span{
+  color: $second;
+
+}
+
+h2 {
+  font: 36px 'roboto_regular_400', 'Arial', sans-serif;
+  color: $white;
+    .primary-color {
+      font: 36px 'roboto_bold_700', 'Arial', sans-serif;
+      color: $primary;
+    }
+    margin-top: 20px;
+}
+
+.primary-color {
+  color: $primary;
+}
+
+.left__content--wrap {
+  max-width: 600px;
+}
+
+.price__block {
+  position: relative;
+  z-index: 1;
+  margin-top: 35px;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  align-items: center;
+}
+
+.price__block--single,
+.price__block--opt
+{
+  background: rgba(255,255,255, .2);
+  background: linear-gradient(0deg, rgba(255,255,255,.3) 1%, rgba(255,255,255,.1) 28%);
+  padding: 20px 40px;
+  border-radius: 74px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0px 0px 0px 1px rgb(255,255,255,.2) inset,
+  0px 0px 0px 1px rgb(255,255,255,.3) inset,
+  0px 0px 0px 1px rgb(255,255,255,.2) inset,
+  -1px -1px 0px 1px rgb(255,255,255,.1) inset;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.price__detail {
+  font: 16px 'roboto_light_300', 'Arial', sans-serif;
+  color: $white;
+  text-align: left;
+  display: inline-block;
+}
+
+.price {
+  font: 55px 'roboto_black_900', 'Arial', sans-serif;
+  color: $white;
+  text-align: left;
+  display: inline-block
+}
+
+.price--gift {
+  font: 16px 'roboto_black_900', 'Arial', sans-serif;
+  color: $primary;
+  text-align: left;
+  display: inline-block;
+}
+
+.form__wrap {
+  position: relative;
+  margin-top: 35px;
+  background: rgba(255,255,255, .2);
+  background: linear-gradient(0deg, rgba(255,255,255,.3) 1%, rgba(255,255,255,.1) 28%);
+  padding: 5px 25px 25px;
+  border-radius: 30px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0px 0px 0px 1px rgb(255,255,255,.2) inset,
+  0px 0px 0px 1px rgb(255,255,255,.3) inset,
+  0px 0px 0px 1px rgb(255,255,255,.2) inset,
+  -1px -1px 0px 1px rgb(255,255,255,.1) inset;
+  z-index: 1;
+
+}
+
+.form__wrap form {
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field {
+  //width: 268px;
+  margin-top: 20px;
+}
+
+.form__wrap label {
+  display: block;
+  padding-left: 20px;
+  font: 16px 'roboto_regular_400', 'Arial', sans-serif;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=submit] {
+  display: inline-block;
+  background: rgba(0,0,0,.5);
+  height: 23px;
+  border-radius: 12px;
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+  font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+  color: $white;
+  padding: 20px 5px 20px 20px;
+  width: 240px;
+  &:active, &:hover, &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+
+
+
+input[type=submit] {
+  font: 24px 'roboto_regular_400', 'Arial', sans-serif;
+  color: $blue;
+  background: $primary;
+  text-align: center;
+  height: 63px;
+  padding: 20px 0 20px 0;
+  width: 265px;
+  cursor: pointer;
+  &:hover {
+    background: #f9df00;
+  }
+}
+
+.field__description h3 {
+  text-align: left;
+  font: 36px 'roboto_regular_400', 'Arial', sans-serif;
+  color: $white;
+  width: 260px;
+  margin: 0;
+}
+
+.field__description h3 span {
+  font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+}
+
+.timer {
+  margin-top: 30px;
+  max-width: 420px;
+}
+
+.timer h4 {
+  font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+  text-align: left;
+  margin-bottom: 0;
+  color: $white;
+}
+
+.timer__items {
+  margin-top: 10px;
+  background: rgba(255,255,255, .2);
+  background: linear-gradient(0deg, rgba(255,255,255,.1) 1%, rgba(255,255,255,.15) 28%);
+  border-radius: 12px;
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px 25px;
+}
+
+.timer__item {
+  position: relative;
+  font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+  text-align: center;
+  color: $white;
+  padding: 0 5px;
+}
+
+.timer__days::after {
+  content: ' дні';
+  border-right: 1px solid rgba(255,255,255,.32);
+  padding-right: 20px;
+}
+
+.timer__hours::after {
+  content: ' год';
+  border-right: 1px solid rgba(255,255,255,.32);
+  padding-right: 20px;
+}
+
+.timer__minutes::after {
+  content: ' хви';
+  border-right: 1px solid rgba(255,255,255,.32);
+  padding-right: 20px;
+}
+
+.timer__seconds::after {
+  content: ' сек';
+  border-right: 0px;
+  padding-right: 20px;
+}
+
+
+.brelok__block {
+  position: relative;
+  min-height: 840px;
+}
+
+.brelok__block--img {
+  position: absolute;
+  top: 89px;
+  left: -90px;
+  z-index: 0;
+}
+
+.brelok__block--img img,
+.emblema__zsu img {
+  max-width: 120%;
+}
+
+.brelok__block--zsu {
+  position: absolute;
+  top: 295px;
+  left: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.percent__zsu {
+  margin-left: 10px;
+}
+
+.percent__zsu h3{
+  font: 22px 'roboto_regular_400', 'Arial', sans-serif;
+  text-align: left;
+  color: $white;
+}
+
+.percent__zsu h3 span{
+  font: 29px 'roboto_bold_700', 'Arial', sans-serif;
+  line-height: 140%;
+}
+
+.brelok-description {
+  display: flex;
+	flex-wrap: wrap;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: -200px;
+}
+
+.still {
+  width: 30%;
+  text-align: center;
+  h4 {
+    font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+    text-align: center;
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+.made {
+  width: 30%;
+  text-align: center;
+  h4 {
+    font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+    text-align: center;
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+.delivery {
+  width: 30%;
+  text-align: center;
+  h4 {
+    font: 20px 'roboto_regular_400', 'Arial', sans-serif;
+    text-align: center;
+    color: $white;
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 1198px) {
+
+.right__content {
+  flex-basis: auto;
+}
+
+.brelok__block--img {
+  top: 200px;
+  left:0;
+}
+
+.brelok__block--zsu {
+  top: 930px;
+  left: 20px;
+}
+
+
+.brelok__block {
+  min-height: 1050px;
+}
+
+.brelok__block--img img, .emblema__zsu img {
+  max-width: none;
+}
+
+input[type=tel], input[type=text] {
+  width: auto;
+}
+
+input[type=button] {
+  width: 250px;
+
+}
+
+.field__description h3 {
+  width: 250px;
+}
+
+}
+
+@media (max-width: 1018px) {
+
+  .price__block--opt, .price__block--single {
+    max-width: none;
+  min-width: auto;
+  width: 40%;
+}
+
+input[type=tel], input[type=text] {
+  width: 215px;
+}
+
+.field__description h3, input[type=button] {
+  width: 240px;
+}
+
+}
+
+@media (max-width: 992px) {
+.form__wrap form {
+    display: block;
+  }
+
+  input[type=tel], input[type=text] {
+    width: 94%;
+}
+.field__description h3, input[type=button] {
+  width: 99%;
+}
+
+.price__block--opt, .price__block--single {
+  max-width: none;
+  min-width: auto;
+  width: 40%;
+  padding: 20px 20px 20px 30px;
+}
+h1 {
+  margin: 57px 0 0;
+  text-shadow: 0 0 1px #fff,
+  -1px -1px 0 hsl(0, 0%, 100%),
+  1px 1px 1px hsl(0, 0%, 100%),
+  -1px -1px 15px  rgba(0,34,86,.37);
+
+}
+
+.price__block {
+  width: 150%;
+}
+
+.brelok__block {
+  min-height: 1110px;
+}
+
+.left__content {
+  flex-grow: 0;
+}
+
+.right__content {
+  flex-basis: 300px;
+}
+
+.left__content--wrap {
+  max-width: 500px;
+}
+
+}
+
+
+@media (max-width: 846px) {
+  .left__content--wrap {
+    max-width: 418px;
+}
+
+.brelok__block--img {
+  top: 200px;
+  left: -36px;
+}
+
+.brelok__block--zsu {
+  left: -36px;
+}
+
+.price {
+  font: 41px "roboto_black_900","Arial",sans-serif;
+}
+
+
+
+.right__content {
+  flex-basis: 200px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .brelok__block--img {
+    left: -150px;
+
+}
+
+.form__wrap {
+  max-width: 70%;
+}
+
+.brelok-description {
+  justify-content: center;
+  align-items: center;
+  margin-left: -470px;
+}
+
+.brelok__block--zsu {
+  left: -115px;
+}
+
+input[type=tel], input[type=text] {
+  width: 92%;
+}
+
+
+  .wrap {
+    background: url(../img/kalosha_vse.png) no-repeat 68% top/cover #001b30;
+
+}
+
+.right__content {
+  flex-basis: 0;
+}
+
+.brelok__block--zsu {
+  left: -187px;
+  min-width: 255px;
+}
+
+.brelok-description {
+  margin-left: -401px;
+  width: 450px;
+}
+
+
+}
+
+
+@media (max-width: 650px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left__content {
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+  .right__content {
+    flex-basis: auto;
+  }
+
+  .left__content--wrap {
+    max-width: 100%;
+}
+
+.price__block {
+  width: auto;
+}
+
+.form__wrap {
+  max-width: 100%;
+  margin-top: 500px;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.brelok__block--img {
+  top: -1188px;
+  left: 100px;
+}
+
+.brelok__block--img img, .emblema__zsu img {
+  max-width: 110%;
+}
+
+.brelok__block {
+  min-height: 0px;
+}
+
+.brelok-description {
+  margin-left: 0;
+  width: 100%;
+}
+
+.timer {
+  max-width: 100%;
+}
+
+
+.brelok__block--zsu {
+  top: -1010px;
+  left: 271px;
+  min-width: auto;
+}
+
+.price__block--opt, .price__block--single {
+  width: 38%;
+}
+
+.price__detail {
+  font: 14px 'roboto_light_300', 'Arial', sans-serif;
+  color: $white;
+  text-align: left;
+  display: inline-block;
+}
+
+.price {
+  font: 36px 'roboto_black_900', 'Arial', sans-serif;
+  color: $white;
+  text-align: left;
+  display: inline-block
+}
+
+.price--gift {
+  font: 14px 'roboto_black_900', 'Arial', sans-serif;
+  color: $primary;
+  text-align: left;
+  display: inline-block;
+}
+
+
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h2 .primary-color {
+    font: 24px "roboto_bold_700","Arial",sans-serif;
+  }
+  .brelok__block--img img, .emblema__zsu img {
+    max-width: 115%;
+}
+
+.price__block--opt, .price__block--single {
+
+  min-height: 76px;
+}
+
+.wrap {
+  background: url(../img/kalosha_vse.png) no-repeat 76% center/cover #001b30;
+}
+
+.brelok__block--zsu {
+  left: 303px;
+}
+
+.percent__zsu h3 {
+  font: 19px "roboto_regular_400","Arial",sans-serif;
+}
+
+.percent__zsu h3 span {
+  font: 19px "roboto_bold_700","Arial",sans-serif;
+}
+
+
+}
+
+
+@media (max-width: 480px) {
+
+  .brelok__block--img img, .emblema__zsu img {
+    max-width: 128%;
+}
+
+.wrap {
+  background: url(../img/kalosha_vse.png) no-repeat 76% center/cover #001b30;
+}
+
+.brelok__block--img {
+  top: -1149px;
+}
+
+.price__block--opt, .price__block--single {
+  width: 36%;
+}
+
+.percent__zsu h3 {
+  font: 14px "roboto_regular_400","Arial",sans-serif;
+
+}
+
+.percent__zsu h3 span {
+font: 14px "roboto_bold_700","Arial",sans-serif;
+line-height: 100%;
+}
+
+.price__block--opt, .price__block--single {
+  padding: 12px 20px 10px 30px;
+}
+
+.delivery, .made, .still {
+  width: 100%;
+  margin-top: 25px;
+}
+.delivery h4, .made h4, .still h4 {
+  margin-top: 0;
+  width: 117px;
+  margin: auto;
+}
+
+.brelok__block--zsu {
+  top: -961px;
+  left: 271px;
+  margin-left: -20px;
+}
+
+}
+
+@media (max-width: 450px) {
+  .price__block--opt, .price__block--single {
+    width: 36%;
+  }
+
+  .brelok__block--img img, .emblema__zsu img {
+    max-width: 138%;
+}
+
+.brelok__block--zsu {
+  left: 268px;
+}
+
+
+
+.emblema__zsu img {
+  max-width: none;
+}
+
+}
+
+@media (max-width: 440px) {
+  .brelok__block--img {
+    left: 90px;
+}
+
+.brelok__block--zsu {
+  left: 238px;
+}
+}
+
+
+@media (max-width: 420px) {
+  .price {
+    font: 32px "roboto_black_900","Arial",sans-serif;
+}
+
+.price__block--opt, .price__block--single {
+  min-height: 68px;
+}
+
+.price__block--opt, .price__block--single {
+  width: 34%;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h2 .primary-color {
+  font: 22px "roboto_bold_700","Arial",sans-serif;
+}
+
+.delivery h4, .made h4, .still h4, .timer h4, .timer__item {
+  font: 14px "roboto_regular_400","Arial",sans-serif;
+}
+
+.brelok__block--img {
+  top: -1123px;
+}
+
+.brelok__block--zsu {
+  top: -958px;
+}
+}
+
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 36px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h2 .primary-color {
+  font: 21px "roboto_bold_700","Arial",sans-serif;
+}
+
+.brelok__block--img {
+  left: 59px;
+}
+
+.brelok__block--zsu {
+  left: 206px;
+}
+
+.emblema__zsu img {
+  width: 100%;
+}
+
+.brelok__block--img img {
+  max-width: 150%;
+}
+
+}
+
+@media (max-width: 374px) {
+.price {
+  font: 27px "roboto_black_900","Arial",sans-serif;
+}
+
+.price__block--opt, .price__block--single {
+  width: 32%;
+}
+
+
+.price--gift, .price__detail {
+  font: 13px "roboto_light_300","Arial",sans-serif;
+}
+
+input[type=tel], input[type=text] {
+  width: 89%;
+}
+
+}
+
+@media (max-width: 350px) {
+  .form__wrap {
+    margin-top: 460px;
+  }
+
+  .brelok__block--img {
+    top: -1085px;
+}
+
+.brelok__block--zsu {
+  top: -921px;
+}
+
+.timer__item {
+  padding: 0;
+}
+
+.price {
+  font: 23px "roboto_black_900","Arial",sans-serif;
+}
+
+.price__block--opt, .price__block--single {
+  min-height: 57px;
+  width: 32%;
+}
+}
