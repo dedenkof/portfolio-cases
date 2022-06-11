@@ -1,0 +1,499 @@
+body {
+    font-family: RobotoCondensedRegular, sans-serif;
+    font-size: 16px;
+}
+
+body h1 {
+    font-family: RobotoCondensedBold, sans-serif;
+    font-size: 32px;
+}
+
+
+/*---------------------------header-----------------------------------------------*/
+
+header {
+    min-height: 80px;
+    background: #0e0e0e;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 15px;
+}
+
+header .white-line {
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 2px;
+}
+
+header .top-menu{
+    float: right;
+}
+header .logo{
+    text-align: center;
+}
+header .logo img {
+    width: 143px;
+    margin: 10px 0 0 40px;
+}
+
+header input[type=search]::-webkit-input-placeholder {
+    color: #303030;
+}
+
+header input[type=search]::-moz-placeholder {
+    color: #303030;
+}
+
+
+/* Firefox 19+ */
+
+header input[type=search]:-moz-placeholder {
+    color: #303030;
+}
+
+
+/* Firefox 18- */
+
+header input[type=search]:-ms-input-placeholder {
+    color: #303030;
+}
+
+header button[type=submit] {
+    background: none;
+    border: none;
+    color: #0e0e0e;
+    position: absolute;
+    top: 6px;
+    right: 1px;
+}
+
+header .nav > li:before {
+    content: "|";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    color: #fff20e;
+}
+
+header .nav > li:first-child:before {
+    content: "";
+}
+
+
+/*---------------------------header end-----------------------------------------------*/
+
+
+/*---------------------------pre-header-----------------------------------------------*/
+
+#owl-demo {
+    position: relative;
+}
+
+#owl-demo img {
+    width: 100%;
+}
+
+
+
+.calendar {
+    font-family: RobotoCondensedBold, sans-serif;
+display: block;
+text-align: left;
+color: #212121;
+font-size: 18px;
+width: auto;
+padding: 0;
+border: 1px solid #ffff00;
+text-decoration: none;
+background: transparent;
+margin-left: -29px;
+position: relative;
+min-height: 314px;
+}
+
+.img-dropdown-box{
+    transform: rotate(90deg);
+    display: block;
+}
+.dropdown-box {
+    transform: rotate(90deg);
+    display: block;
+    margin-top: 70px;
+}
+
+/*transform: rotate(90deg);*/
+
+.calendar img {
+    width: 32px;
+height: 50px;
+margin-right: auto;
+margin-left: auto;
+margin-top: -70px;
+}
+
+.calendar p{
+    margin-left: 85px;
+}
+
+.calendar:hover {
+    background: #ffff00;
+    color: #212121;
+}
+
+.carusel-left-dropdown .dropdown-menu{
+    top: -10px;
+    right: 100%;
+    left: auto;
+}
+
+
+/*---------------------------pre-header end-----------------------------------------------*/
+
+
+/*---------------------------container-main-----------------------------------------------*/
+
+
+
+.main {
+    padding: 0 0 35px 0;
+}
+
+.news-box {
+    padding: 25px 0 15px 0;
+    font-family: RobotoRegular, sans-serif;
+    border-bottom: 1px solid #8e8e8e;
+}
+
+.left-content .news-box h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.news-box .small-text {
+    font-size: 14px;
+    color: #969696;
+    margin-bottom: 35px;
+}
+
+.news-box p {
+    margin-bottom: 25px;
+}
+
+.news-box a {
+    color: #969696;
+    font-size: 14px;
+}
+
+
+/*--------pagination styles---------*/
+
+.pagination__holder a {
+    color: #1d1d1d;
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination__holder a:hover {
+    color: #1d1d1d;
+    opacity: 0.5;
+}
+
+.jp-previous {
+    color: #1d1d1d;
+}
+
+.jp-next {
+    color: #1d1d1d;
+}
+
+.jp-current,
+.jp-current:hover {
+    color: #1d1d1d;
+    opacity: 0.5;
+}
+
+.jp-disabled,
+.jp-disabled:hover {
+    color: #1d1d1d;
+    opacity: 0.5;
+}
+
+.jp-current,
+.jp-current:hover,
+.jp-disabled,
+.jp-disabled:hover {
+    color: #1d1d1d;
+    opacity: 0.5;
+}
+
+
+
+/*--------pagination styles end---------*/
+
+
+/*---------------------------container-main end-----------------------------------------------*/
+
+
+/*---------------------------container-news-----------------------------------------------*/
+
+.container-news {
+    min-height: 900px;
+    padding: 0;
+    width: 880px;
+    float: left;
+}
+
+.container-news .heading-block {
+    padding: 25px 20px 20px 30px;
+    background: #999999;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-block .pre-heading {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.container-news .main-text {
+    font-size: 14px;
+    color: #1d1d1d;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.main-text p {
+    margin-bottom: 20px;
+}
+
+.news-comments {
+    background: #f8faf9;
+    padding: 15px 20px 15px 35px;
+    font-size: 14px;
+}
+
+.news-comments h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.news-comments .comments-box {
+    margin-bottom: 25px;
+}
+
+.news-comments .days {
+    font-size: 14px;
+    color: #cccccc;
+    float: left;
+    margin-right: 30px;
+}
+
+.news-comments a {
+    font-size: 14px;
+    color: #212121;
+}
+
+
+/*---------------------------container-news end-----------------------------------------------*/
+
+
+/*---------------------------container-faq container-contacts -----------------------------------------------*/
+.container-faq, .container-contacts {
+    min-height: 900px;
+    padding: 25px 30px 20px 25px;
+    width: 880px;
+    float: left;
+    font-family: RobotoRegular, sans-serif;
+}
+.container-faq h1, .container-contacts h1{
+    color: #1d1d1d;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #8e8e8e;
+    margin-bottom: 20px;
+}
+.container-faq p, .container-contacts p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.container-contacts a{
+    color: #3b3b3b;
+}
+
+/*---------------------------container-faq container-contacts end-----------------------------------------------*/
+
+
+/*---------------------------sidebars-----------------------------------------------*/
+
+.right-sidebar li{
+    margin-bottom: 18px;
+}
+.menu-sidebar {
+    padding: 30px 30px 10px 30px;
+    background: #212121;
+}
+
+.menu-sidebar a {
+    color: #f8faf9;
+    text-transform: uppercase;
+}
+
+.menu-sidebar a:hover {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+
+
+
+
+.interesting {
+    background: #f8faf9;
+    padding: 30px 30px 10px 30px;
+}
+
+.interesting h2 {
+    font-size: 17px;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.interesting a {
+    color: #212121;
+    font-family: RobotoCondensedRegular, sans-serif;
+    text-transform: uppercase;
+}
+
+.interesting a:hover {
+    color: #212121;
+}
+
+.widget {
+    height: 205px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+}
+
+.widget-content{
+
+}
+
+
+/*---------------------------sidebars end-----------------------------------------------*/
+
+
+/*---------------------------footer-----------------------------------------------*/
+
+footer {
+    background: #0e0e0e;
+    min-height: 80px;
+    padding-top: 30px;
+}
+
+.container-social {
+    font-size: 25px;
+}
+
+.container-social a {
+    transition: 0.2s;
+    margin-left: 25px;
+    text-align: center;
+}
+
+
+footer .top i {
+    margin-left: 15px;
+    font-size: 28px;
+    position: absolute;
+    top: 9px;
+}
+
+
+/*---------------------------footer end-----------------------------------------------*/
+
+@media only screen and (max-width: 992px){
+
+    footer{
+        padding: 25px 0;
+    }
+
+    .calendar{
+    width: 100%;
+    margin-left: auto;
+    min-height: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.calendar img {
+    width: 32px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.dropdown-box {
+    transform: rotate(0deg);
+    display: block;
+    margin-top: 0;
+}
+
+.carusel-left-dropdown .dropdown-menu {
+    top: 100%;
+    right: 0;
+    left: 0;
+}
+
+.carusel-left-dropdown .dropdown-menu > *{
+    margin: 0 auto;
+    display: block;
+}
+
+.right-sidebar{
+    margin-top: 30px;
+}
+
+.interesting{
+    margin: 30px 0;
+}
+
+.container-social, .bottom-menu{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-social{
+    margin-top: 20px;
+}
+
+}
+
+@media only screen and (max-width: 768px){
+    header button[type="submit"] {
+    top: 46px;
+    right: 30px;
+}
+
+header .logo img {
+    width: 143px;
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+header .top-menu {
+    float: none;
+}
+
+
+
+}
