@@ -39,3 +39,6 @@
 
 - Aim game
   Click on randomly appearing circles in a short time
+
+- Popup notice
+  Random notifications of ordered goods
